@@ -42,4 +42,4 @@ def about():
 def music():
     value = 1
     link = getSongUrlFromValue(value)
-    return render_template('testpage.html', songUrl = link)
+    return render_template('music.html', songUrl = link)
