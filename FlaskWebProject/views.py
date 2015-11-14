@@ -40,6 +40,6 @@ def about():
 
 @app.route('/music')
 def music():
-    value = 1
+    value = 0.2
     link = getSongUrlFromValue(value)
     return render_template('music.html', songUrl = link)
