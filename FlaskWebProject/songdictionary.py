@@ -36,5 +36,5 @@ def getSongUrlFromValue(value):
                  0.4 : 'goodish song',
                  0.6 : 'good song',
                  0.8 : 'happiysh song',
-                 1.0 : 'https://songanalysis.blob.core.windows.net/songs/10_happy'} 
+                 1.0 : 'https://newsfeels.blob.core.windows.net/songs/10_happy'} 
         return songdisc[sentValue]
