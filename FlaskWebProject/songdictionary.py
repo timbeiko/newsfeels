@@ -20,7 +20,6 @@ def getSentValue(value):
                 sentValue =  0.6
         else:
                 sentValue =  1.0
-
         return sentValue
 
 # Returns url of song with 
