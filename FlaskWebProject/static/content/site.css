@@ -1,22 +1,4 @@
-﻿/*body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}*/
-
-/* Set padding to keep content from hitting the edges */
-/*.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-*/
-
-/*input,
-select,
-textarea {
-    max-width: 280px;
-}*/
-
-/* styles for validation helpers */
+﻿/* styles for validation helpers */
 .field-validation-error {
     color: #b94a48;
 }
@@ -44,7 +26,7 @@ input[type="checkbox"].input-validation-error {
 /* JAMIES'S CODE */
 
 body {
-  background-color:#bcd2ee;
+  background-color:#bcd2ee!important;
   text-align:center;
 } 
 
