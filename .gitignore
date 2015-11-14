@@ -14,6 +14,9 @@ __pycache__/
 *.user
 *.sln.docstates
 
+# MP3s
+*.mp3
+
 # Auto-generated virtual environment
 /env/
 
