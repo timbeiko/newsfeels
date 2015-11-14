@@ -11,12 +11,12 @@ from songdictionary import getSongUrlFromValue
 @app.route('/')
 @app.route('/home')
 def home(): 
-    """Renders the home page."""
-    return render_template(
-        'index.html',
-        title='Home Page',
-        year=datetime.now().year,
-    )
+    # """Renders the home page."""
+    # return render_template(
+    #     'index.html',
+    #     title='Home Page',
+    #     year=datetime.now().year,
+    # )
 
 @app.route('/contact')
 def contact():
