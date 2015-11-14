@@ -9,9 +9,8 @@ from songdictionary import getSentValue
 from songdictionary import getSongUrlFromValue
 
 @app.route('/')
-@app.route('/home')
 def home(): 
-    return render_template()
+    return render_template('index.html')
 
 @app.route('/contact')
 def contact():
