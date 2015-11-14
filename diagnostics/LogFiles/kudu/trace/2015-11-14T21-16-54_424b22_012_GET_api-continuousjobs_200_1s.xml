@@ -1,0 +1,4 @@
+<step title="Incoming Request" date="2015-11-14T21:16:54.756" instance="424b22" url="/api/continuousjobs/" method="GET" type="request" pid="9500,2,40" Connection="Keep-Alive" Accept="application/json" Accept-Language="en-US" Host="newsfeels.scm.azurewebsites.net" User-Agent="Azure-Portal/5.13.00298.1" x-ms-client-request-id="53f5bde1-2aee-46d1-ae7e-7acbbbd96e34-2015-11-14 21:17:30Z" x-ms-client-session-id="1aa85c81-57f9-4faa-b89a-0349ec9ecf25" X-SITE-DEPLOYMENT-ID="newsfeels" >
+  <step title="Cleanup Xml Logs" date="2015-11-14T21:16:54.756" /><!-- duration: 16ms -->
+  <step title="Outgoing response" date="2015-11-14T21:16:55.381" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="4496f6db-ee3a-4634-b04e-a3e308d8c9be" ETag="&quot;11&quot;" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="application/json; charset=utf-8" /><!-- duration: 0ms -->
+</step><!-- duration: 641ms -->

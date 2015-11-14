@@ -8,6 +8,10 @@ from FlaskWebProject import app
 from songdictionary import getSentValue
 from songdictionary import getSongUrlFromValue
 
+if __name__ == '__main__':
+    app.debut = True
+    app.run()
+
 @app.route('/')
 def home(): 
     return render_template('index.html')

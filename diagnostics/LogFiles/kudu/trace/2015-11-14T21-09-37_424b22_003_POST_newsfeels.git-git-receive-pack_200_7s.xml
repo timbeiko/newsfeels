@@ -1,0 +1,11 @@
+<step title="Incoming Request" date="2015-11-14T21:09:37.908" instance="424b22" url="/newsfeels.git/git-receive-pack" method="POST" type="request" pid="9500,2,12" Connection="Keep-Alive" Content-Length="2624" Content-Type="application/x-git-receive-pack-request" Accept="application/x-git-receive-pack-result" Accept-Encoding="gzip" Host="newsfeels.scm.azurewebsites.net" User-Agent="git/2.6.3" X-SITE-DEPLOYMENT-ID="newsfeels" >
+  <step title="RpcService.ReceivePack" date="2015-11-14T21:09:37.925" >
+    <step title="Assuming git repository at D:\home\site\wwwroot" date="2015-11-14T21:09:37.939" /><!-- duration: 0ms -->
+    <step title="Assuming git repository at D:\home\site\wwwroot" date="2015-11-14T21:09:37.955" /><!-- duration: 0ms -->
+    <step title="Creating temporary deployment" date="2015-11-14T21:09:38.174" /><!-- duration: 31ms -->
+    <step title="GitExeServer.Receive" date="2015-11-14T21:09:38.205" >
+      <step title="Executing external process" date="2015-11-14T21:09:38.205" type="process" path="git.exe" arguments="receive-pack --stateless-rpc &quot;D:\home\site\wwwroot&quot;" /><!-- duration: 6589ms -->
+    </step><!-- duration: 6604ms -->
+  </step><!-- duration: 6916ms -->
+  <step title="Outgoing response" date="2015-11-14T21:09:44.841" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" Expires="Fri, 01 Jan 1980 00:00:00 GMT" Pragma="no-cache" Cache-Control="no-cache, max-age=0, must-revalidate" X-AspNet-Version="4.0.30319" Content-Type="application/x-git-receive-pack-result" /><!-- duration: 0ms -->
+</step><!-- duration: 6932ms -->

@@ -1,0 +1,14 @@
+<step title="Incoming Request" date="2015-11-14T21:21:31.652" instance="424b22" url="/newsfeels.git/info/refs?service=git-receive-pack" method="GET" type="request" pid="6544,2,8" Connection="Keep-Alive" Pragma="no-cache" Accept="*/*" Accept-Encoding="gzip" Host="newsfeels.scm.azurewebsites.net" User-Agent="git/2.6.3" X-SITE-DEPLOYMENT-ID="newsfeels" >
+  <step title="Cleanup Xml Logs" date="2015-11-14T21:21:31.652" /><!-- duration: 16ms -->
+  <step title="InfoRefsService.Execute" date="2015-11-14T21:21:31.714" >
+    <step title="Assuming git repository at D:\home\site\wwwroot" date="2015-11-14T21:21:31.871" /><!-- duration: 0ms -->
+    <step title="InfoRefsService.SmartInfoRefs" date="2015-11-14T21:21:31.871" >
+      <step title="Assuming git repository at D:\home\site\wwwroot" date="2015-11-14T21:21:31.902" /><!-- duration: 0ms -->
+      <step title="GitExeServer.AdvertiseReceivePack" date="2015-11-14T21:21:31.918" >
+        <step title="Executing external process" date="2015-11-14T21:21:31.933" type="process" path="git.exe" arguments="receive-pack --stateless-rpc --advertise-refs &quot;D:\home\site\wwwroot&quot;" /><!-- duration: 78ms -->
+      </step><!-- duration: 109ms -->
+      <step title="Writing 185 bytes" date="2015-11-14T21:21:32.027" /><!-- duration: 0ms -->
+    </step><!-- duration: 156ms -->
+  </step><!-- duration: 328ms -->
+  <step title="Outgoing response" date="2015-11-14T21:21:32.043" type="response" statusCode="200" statusText="OK" Server="Microsoft-IIS/8.0" x-ms-request-id="34b449e1-b794-4c91-812e-899378bbf9af" Pragma="no-cache" Cache-Control="must-revalidate, no-cache, max-age=0" Expires="Tue, 01 Jan 1980 00:00:00 GMT" Content-Length="185" X-AspNet-Version="4.0.30319" Content-Type="application/x-git-receive-pack-advertisement" /><!-- duration: 17ms -->
+</step><!-- duration: 407ms -->

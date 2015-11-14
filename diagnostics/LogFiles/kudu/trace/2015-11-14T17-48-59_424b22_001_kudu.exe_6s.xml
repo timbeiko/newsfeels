@@ -1,0 +1,20 @@
+<step title="Executing external process" date="2015-11-14T17:48:59.716" instance="424b22" type="process" path="kudu.exe" arguments="D:\home\site C:\Program Files (x86)\SiteExtensions\Kudu\48.41029.1889\msbuild" >
+  <step title="Cleanup Xml Logs" date="2015-11-14T17:48:59.731" /><!-- duration: 16ms -->
+  <step title="DeploymentManager.Deploy(id)" date="2015-11-14T17:48:59.856" >
+    <step title="Collecting changeset information" date="2015-11-14T17:48:59.872" /><!-- duration: 63ms -->
+    <step title="Updating to specific changeset" date="2015-11-14T17:48:59.935" /><!-- duration: 250ms -->
+    <step title="Updating submodules" date="2015-11-14T17:49:00.185" /><!-- duration: 63ms -->
+    <step title="Determining deployment builder" date="2015-11-14T17:49:00.325" >
+      <step title="Builder is PythonSiteBuilder" date="2015-11-14T17:49:00.450" /><!-- duration: 0ms -->
+    </step><!-- duration: 141ms -->
+    <step title="Copying SSH keys" date="2015-11-14T17:49:00.497" /><!-- duration: 0ms -->
+    <step title="Building" date="2015-11-14T17:49:00.497" >
+      <step title="Generating deployment script" date="2015-11-14T17:49:00.544" >
+        <step title="Using cached version of the deployment script for command: -y --no-dot-deployment -r &quot;D:\home\site\wwwroot&quot; -o &quot;D:\home\site\deployments\tools&quot; --python" date="2015-11-14T17:49:00.606" /><!-- duration: 0ms -->
+      </step><!-- duration: 78ms -->
+      <step title="Executing external process" date="2015-11-14T17:49:00.716" type="process" path="starter.cmd" arguments="&quot;D:\home\site\deployments\tools\deploy.cmd&quot;" /><!-- duration: 4016ms -->
+    </step><!-- duration: 4391ms -->
+  </step><!-- duration: 5031ms -->
+  <step title="Cleaning up temp files" date="2015-11-14T17:49:04.888" /><!-- duration: 16ms -->
+  <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2015-11-14T17:49:04.903" /><!-- duration: 328ms -->
+</step><!-- duration: 5672ms -->

@@ -1,0 +1,23 @@
+2015-11-14T21:09:39.1302104Z,Updating branch 'master'.,49dfea36-577a-4e7b-b547-cbbaa09f1357,0
+2015-11-14T21:09:39.3645708Z,Updating submodules.,c069bdf9-d5c5-4067-b3cd-2569fcc0d0a2,0
+2015-11-14T21:09:39.4114519Z,Preparing deployment for commit id '71fe2dba34'.,17abe37d-ad7a-495b-9b1c-689276396249,0
+	2015-11-14T21:09:39.5520963Z,Found solution 'D:\home\site\wwwroot\FlaskWebProject.sln' with no deployable projects. Deploying files instead.,,0
+2015-11-14T21:09:39.6145789Z,Generating deployment script.,50439f2d-5f57-468d-9b65-ba5d25647fbf,0
+	2015-11-14T21:09:39.6927046Z,Using cached version of deployment script (command: 'azure -y --no-dot-deployment -r "D:\home\site\wwwroot" -o "D:\home\site\deployments\tools" --python').,,0
+2015-11-14T21:09:39.7239552Z,Running deployment command...,29148453-b38d-48c2-9358-975299e832c7,0
+	2015-11-14T21:09:39.7395990Z,Command: "D:\home\site\deployments\tools\deploy.cmd",,0
+	2015-11-14T21:09:40.4270993Z,Handling python deployment.,,0
+	2015-11-14T21:09:40.4270993Z,Detected requirements.txt.  You can skip Python specific steps with a .skipPythonDeployment file.,,0
+	2015-11-14T21:09:40.5521340Z,Detecting Python runtime from site configuration,,0
+	2015-11-14T21:09:40.5521340Z,Detected python-2.7,,0
+	2015-11-14T21:09:40.5677474Z,Found compatible virtual environment.,,0
+	2015-11-14T21:09:40.5677474Z,Pip install requirements.,,0
+	2015-11-14T21:09:43.7314263Z,Requirement already satisfied (use --upgrade to upgrade): Flask<1 in d:\home\site\wwwroot\env\lib\site-packages (from -r requirements.txt (line 1)),,0
+	2015-11-14T21:09:43.7515883Z,Requirement already satisfied (use --upgrade to upgrade): Werkzeug>=0.7 in d:\home\site\wwwroot\env\lib\site-packages (from Flask<1->-r requirements.txt (line 1)),,0
+	2015-11-14T21:09:43.7626777Z,Requirement already satisfied (use --upgrade to upgrade): Jinja2>=2.4 in d:\home\site\wwwroot\env\lib\site-packages (from Flask<1->-r requirements.txt (line 1)),,0
+	2015-11-14T21:09:43.7626777Z,Requirement already satisfied (use --upgrade to upgrade): itsdangerous>=0.21 in d:\home\site\wwwroot\env\lib\site-packages (from Flask<1->-r requirements.txt (line 1)),,0
+	2015-11-14T21:09:43.7783020Z,Cleaning up...,,0
+	2015-11-14T21:09:43.8095537Z,Overwriting web.config with web.2.7.config,,0
+	2015-11-14T21:09:43.8720854Z,        1 file(s) copied.,,0
+	2015-11-14T21:09:43.8876797Z,Finished successfully.,,0
+2015-11-14T21:09:43.9658078Z,Deployment successful.,f5f9f36e-bf40-4eb1-8886-a7f34448e2ee,0
