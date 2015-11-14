@@ -5,10 +5,12 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import render_template
 from FlaskWebProject import app
+from songdictionary import getSentValue
+from songdictionary import getSongUrlFromValue
 
 @app.route('/')
 @app.route('/home')
-def home():
+def home(): 
     """Renders the home page."""
     return render_template(
         'index.html',
@@ -35,3 +37,9 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@app.route('/music')
+def music():
+    value = 1
+    link = getSongUrlFromValue(value)
+    return render_template('testpage.html', songUrl = link)
