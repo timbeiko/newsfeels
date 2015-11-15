@@ -18,7 +18,7 @@ if __name__ == '__main__':
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        article = linkToText('hi')
+        article = main('hi')
         return redirect(url_for('music', article = article)
     else:
     return render_template('index.html')
