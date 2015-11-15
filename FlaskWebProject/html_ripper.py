@@ -1,11 +1,11 @@
 # Programming to Rip Body Text of HTML
 # to be put into alchemy API for sentiment analysis
 
-url= input("Link: ")
+# url= input("Link: ")
 
 # imports
 from bs4 import BeautifulSoup
-import urllib.request
+import urllib2
 import re
 import pprint as pp
 
@@ -36,7 +36,7 @@ def visible(element):
 
 # *************************************************************************** #
 
-def main(website): 
+def urlToText(website): 
   """Rips visible elments"""
   texts = get_html(website)
   visible_text = list(filter(visible, texts))
@@ -44,7 +44,7 @@ def main(website):
 
   return("".join(rip))
 
-if __name__ == "__main__":
-  main(url)
+# if __name__ == "__main__":
+#   main(url)
 
 #pp.pprint(get_html(url))

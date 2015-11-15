@@ -7,21 +7,21 @@ from flask import render_template
 from FlaskWebProject import app
 from songdictionary import getSentValue
 from songdictionary import getSongUrlFromValue
-from html_ripper import main
 from flask import request
-from flask import abort, redirect, url_fo
+from flask import abort, redirect, url_for
+from html_ripper import urlToText, get_html, visible
 
 if __name__ == '__main__':
     app.debut = True
     app.run(debug=True)
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def home():
-    # if request.method == 'POST':
-    #     # article = main('hi')
-    #     return redirect(url_for('music', article = "hi"))
-    # else:
-    return render_template('index.html')
+    if request.method == 'POST':
+        text = request.form['weblink']
+        return redirect(url_for('music', text=text))
+    else:
+        return render_template('index.html')
 
 @app.route('/contact')
 def contact():
@@ -45,7 +45,9 @@ def about():
 
 @app.route('/music')
 def music():
-    article = article
-    value = 0.2
-    link = getSongUrlFromValue(value)
-    return render_template('music.html', songUrl = link)
+    text = request.args['text']
+    text = urlToText(text)
+    # print text
+    # value = 0.2
+    # link = getSongUrlFromValue(value)
+    return render_template('music.html', text = text)
