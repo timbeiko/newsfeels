@@ -32,7 +32,7 @@ def music():
       text = to_text(text) 
     else:
       text = text    
-
-    # x = str(request.args['text'])
-    sentiment = determineSubject(text)      
-    return render_template('music.html', text=text, sentiment = sentiment)
+    sentiment = float(determineSubject(text))
+    value = getSentValue(sentiment)
+    songUrl = getSongUrlFromValue(sentiment)   
+    return render_template('music.html', text=text, sentiment = sentiment, songUrl=songUrl, value=value)
