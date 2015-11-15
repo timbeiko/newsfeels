@@ -14,11 +14,11 @@
 
     <div id="choices">
     <form name="preferences" method="post" action="/">
-        <span class="smalltext">URL?</span>
+        <span class="smalltext">URL or Text</span>
         <div id="choice1">
             <input class="btn" type="text" name="weblink">
         </div>
-        <span class="smalltext">SCROLL SPEED?</span>
+        <span class="smalltext">SPEED?</span>
         <div id="choice2" class="btn-group" data-toggle="buttons-radio">
             <button type="button" class="btn btn-primary">Slow</button>
             <button type="button" class="btn btn-primary">Medium</button>
@@ -27,10 +27,14 @@
         <br>
         <span class="smalltext">BEAT OR SONG?</span>
         <br>
-        <div id="choice3" class="btn-group" data-toggle="buttons-radio">
-            <button type="button" class="btn btn-primary">Beat</button>
-            <button type="button" class="btn btn-primary">Song</button>
-        </div>
+        <!-- <div id="choice3" class="btn-group" data-toggle="buttons-radio2" > -->
+<!--             <button type="button" class="btn btn-primary" name="beat">Beat</button>
+            <button type="button" class="btn btn-primary" name="song">Song</button>
+ -->
+            <input type="radio" name="soundtype" id="soundtype1" value="song" checked="checked"> Song </input><br/>
+            <input type="radio" name="soundtype" id="soundtype2" value="beat"> Beat </input><br/>
+
+        <!-- </div> -->
         <br>                
         <div id="choice4">
             <input class="btn" type="submit" value="Submit"> 
