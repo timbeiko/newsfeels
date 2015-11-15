@@ -50,4 +50,4 @@ def music():
     # print text
     # value = 0.2
     # link = getSongUrlFromValue(value)
-    return render_template('music.html', text = text)
+    return render_template('music.html')

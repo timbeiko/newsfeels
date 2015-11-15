@@ -5,14 +5,14 @@
 
 # imports
 from bs4 import BeautifulSoup
-import urllib2
+from urllib2 import urlopen
 import re
 import pprint as pp
 
    
 def get_html(website):
   """Rips the body text from the page"""
-  with urllib.request.urlopen(website) as page:
+  with urllib2.urlopen(website) as page:
     soup = BeautifulSoup(page)
     body = soup.body
     texts = body.findAll(text=True)
