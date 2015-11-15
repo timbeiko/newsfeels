@@ -9,10 +9,13 @@ import re
 
 def to_text(website): 
   """Rips visible elments __main__"""
-  texts = get_html(website)
-  visible_text = filter(visible, texts)
-  rip = "".join(visible_text)
-  return "".join(rip)
+  # texts = get_html(website)
+  # visible_text = filter(visible, texts)
+  # rip = "".join(visible_text)
+  # return "".join(rip)
+  text = urllib2.urlopen("http://boilerpipe-web.appspot.com/extract?url="+ website + "&output=text")
+  return text.read()
+
    
 # *************************************************************************** #
 
