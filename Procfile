@@ -1,3 +1,3 @@
 heroku ps:scale web=1
-web: gunicorn nameapp:app --log-file -
+web: gunicorn newsfeels:app --log-file -
 worker: python worker.py
