@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<div class='header-title'>
+    <h2>Your Article</h2>     
+</div>
 
-<p>Test to add autoplaying audio to html page</p>
-<p>{{songUrl}}</p>
-
-<p>Article: </p>
-<p>{{text}}</p>
-
+<h4>
+  Your link: {{text}}
+</h4>
 
 <audio autoplay>
   <source src={{songUrl}} type="audio/mpeg">

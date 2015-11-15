@@ -46,8 +46,8 @@ def about():
 @app.route('/music')
 def music():
     text = request.args['text']
-    text = urlToText(text)
+    #text = urlToText(text)
     # print text
     # value = 0.2
     # link = getSongUrlFromValue(value)
-    return render_template('music.html')
+    return render_template('music.html', text=text)

@@ -12,15 +12,14 @@ import pprint as pp
    
 def get_html(website):
   """Rips the body text from the page"""
-  with urllib2.urlopen(website) as page:
+  with urlopen(website) as page:
     soup = BeautifulSoup(page)
     body = soup.body
     texts = body.findAll(text=True)
-
-  return texts
+    return texts
 
 # *************************************************************************** #
-
+ 
 def visible(element):
   """For analysis of HTML tags & returns True for text visible to the user"""
   tags = ['style', 'script', '[document]', 'head', 'title']
