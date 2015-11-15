@@ -1,0 +1,4 @@
+<step title="Incoming Request" date="2015-11-14T21:17:41.588" instance="424b22" url="/api/settings/branch" method="GET" type="request" pid="9500,2,37" Connection="Keep-Alive" Accept="application/json" Accept-Language="en-US" Host="newsfeels.scm.azurewebsites.net" User-Agent="Azure-Portal/5.13.00298.1" x-ms-client-request-id="92cba1c5-256a-4daf-afa3-629cc6247e57-2015-11-14 21:18:17Z" x-ms-client-session-id="1aa85c81-57f9-4faa-b89a-0349ec9ecf25" X-SITE-DEPLOYMENT-ID="newsfeels" >
+  <step title="Cleanup Xml Logs" date="2015-11-14T21:17:41.588" /><!-- duration: 16ms -->
+  <step title="Outgoing response" date="2015-11-14T21:17:41.666" type="response" statusCode="404" statusText="Not Found" Server="Microsoft-IIS/8.0" x-ms-request-id="ccb20cce-96f8-456d-9b6c-dddfba7c27a4" Cache-Control="private" X-AspNet-Version="4.0.30319" Content-Type="application/json; charset=utf-8" /><!-- duration: 16ms -->
+</step><!-- duration: 94ms -->

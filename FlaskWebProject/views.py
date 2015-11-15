@@ -11,17 +11,17 @@ from html_ripper import main
 from flask import request
 from flask import abort, redirect, url_fo
 
-# if __name__ == '__main__':
-#     app.debut = True
-#     app.run()
+if __name__ == '__main__':
+    app.debut = True
+    app.run()
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    if request.method == 'POST':
-        article = main('hi')
-        return redirect(url_for('music', article = "hi"))
-    else:
-        return render_template('index.html')
+    # if request.method == 'POST':
+    #     # article = main('hi')
+    #     return redirect(url_for('music', article = "hi"))
+    # else:
+    return render_template('index.html')
 
 @app.route('/contact')
 def contact():

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>0db34957f96e619ae97bdf6254647ae5456852d9</id>
+  <author>tbeiko</author>
+  <deployer>tbeiko</deployer>
+  <authorEmail>t.beiko23@gmail.com</authorEmail>
+  <message>Add return template
+</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2015-11-14T21:23:26.3684664Z</lastSuccessEndTime>
+  <receivedTime>2015-11-14T21:21:33.6584828Z</receivedTime>
+  <startTime>2015-11-14T21:21:34.0491021Z</startTime>
+  <endTime>2015-11-14T21:23:26.3684664Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>False</is_readonly>
+</deployment>

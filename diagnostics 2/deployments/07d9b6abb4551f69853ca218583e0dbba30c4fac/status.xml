@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>07d9b6abb4551f69853ca218583e0dbba30c4fac</id>
+  <author>tbeiko</author>
+  <deployer>tbeiko</deployer>
+  <authorEmail>t.beiko23@gmail.com</authorEmail>
+  <message>remove dynamic elements from index
+</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2015-11-14T21:14:11.6479482Z</lastSuccessEndTime>
+  <receivedTime>2015-11-14T21:14:06.8249862Z</receivedTime>
+  <startTime>2015-11-14T21:14:07.221662Z</startTime>
+  <endTime>2015-11-14T21:14:11.6479482Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>False</is_readonly>
+</deployment>

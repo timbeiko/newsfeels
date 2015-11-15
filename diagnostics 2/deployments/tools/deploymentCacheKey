@@ -1,0 +1,2 @@
+48.41029.1889.0
+-y --no-dot-deployment -r "D:\home\site\wwwroot" -o "D:\home\site\deployments\tools" --python
