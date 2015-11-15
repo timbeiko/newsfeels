@@ -19,9 +19,9 @@ if __name__ == '__main__':
 def home():
     if request.method == 'POST':
         article = main('hi')
-        return redirect(url_for('music', article = article)
+        return redirect(url_for('music', article = article))
     else:
-    return render_template('index.html')
+        return render_template('index.html')
 
 @app.route('/contact')
 def contact():
