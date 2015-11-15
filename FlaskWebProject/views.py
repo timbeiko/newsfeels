@@ -9,7 +9,7 @@ from songdictionary import getSentValue
 from songdictionary import getSongUrlFromValue
 from flask import request
 from flask import abort, redirect, url_for
-from html_ripper import urlToText, get_html, visible
+from html_rip import link_or_nah, to_text, get_html, visible
 
 if __name__ == '__main__':
     app.debut = True
@@ -46,6 +46,11 @@ def about():
 @app.route('/music')
 def music():
     text = request.args['text']
+    # if text is a link call mains
+    if link_or_nah(text):
+      text = to_text(text) # this is not working
+    else:
+      text = text          # this works
     #text = urlToText(text)
     # print text
     # value = 0.2
