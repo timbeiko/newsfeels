@@ -31,7 +31,6 @@ jmespath==0.7.1
 macholib==1.5.1
 MarkupSafe==0.23
 modulegraph==0.10.4
-numpy==1.8.0rc1
 pathspec==0.3.3
 py2app==0.7.3
 pyobjc-core==2.5.1
