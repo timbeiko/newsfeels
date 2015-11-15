@@ -8,6 +8,7 @@ from FlaskWebProject import app
 from songdictionary import getSentValue
 from songdictionary import getSongUrlFromValue
 from html_ripper import main
+from flask import request
 
 if __name__ == '__main__':
     app.debut = True
