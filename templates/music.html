@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class='header-title'>
+    <h2>Your Music</h2>     
+</div>
+
+<!-- <h4>
+  Your link: {{text}}
+</h4> -->
+
+<!-- <h4>
+  Article mood: {{sentiment}}
+  Ajusted value: {{value}}
+</h4>
+ -->
+<h3>
+  Your music should play, now. Enjoy your reading.
+<!--   SongUrl:  {{songUrl}} -->
+</h3>
+
+<audio autoplay>
+  <source src={{songUrl}} type="audio/mpeg">
+</audio>
+
+{% endblock %}
