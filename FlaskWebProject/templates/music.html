@@ -1,9 +1,27 @@
 {% extends "layout.html" %}
 {% block content %}
 
+
+
+
 <div class='header-title'>
     <h2>Your Article</h2>     
 </div>
+
+<script>
+window.onload = function(){
+	if('{{soundtype}}' == "beat"){
+		SentimentSongCreator.createSound({{sentiment}}, 75, 60)
+	}
+}
+	
+</script>
+
+
+
+<h4 style="text-align:center">
+  Sentiment (-1 to 1): {{sentiment}}
+</h4>
 
 
 <div class="article-area">
@@ -12,14 +30,10 @@
 	</h4>
 </div>
 
-
-	<h4>
-	  Article mood: {{sentiment}}
-	</h4>
-
-
-<audio autoplay>
-  <source src={{songUrl}} type="audio/mpeg">
-</audio>
+{% if soundtype == 'song' %}
+	<audio autoplay>
+	  <source src={{songUrl}} type="audio/mpeg">
+	</audio>
+{% endif %}
 
 {% endblock %}
