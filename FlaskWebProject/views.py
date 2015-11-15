@@ -15,7 +15,7 @@ from flask import abort, redirect, url_fo
 #     app.debut = True
 #     app.run()
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def home():
     # if request.method == 'POST':
     #     # article = main('hi')
