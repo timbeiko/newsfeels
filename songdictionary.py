@@ -27,15 +27,15 @@ def getSentValue(value):
 # Returns url of song with 
 def getSongUrlFromValue(value):
   sentValue = getSentValue(value)
-  songdisc = {-1.0 : 'saddest song', 
-              -0.8 : 'sadder song',
-              -0.6 : 'saddish song',
+  songdisc = {-1.0 : 'https://newsfeels.blob.core.windows.net/songs/-10_marvin', 
+              -0.8 : 'https://newsfeels.blob.core.windows.net/songs/-08_dont',
+              -0.6 : 'https://newsfeels.blob.core.windows.net/songs/-06_hello',
               -0.4 : 'https://newsfeels.blob.core.windows.net/songs/-04_georgia',
-              -0.2 : 'sad song', 
-               0.0 : 'okay song', 
+              -0.2 : 'https://newsfeels.blob.core.windows.net/songs/-02_diamonds', 
+               0.0 : 'https://newsfeels.blob.core.windows.net/songs/00_help', 
                0.2 : 'https://newsfeels.blob.core.windows.net/songs/02_wonderful_world', 
                0.4 : 'https://newsfeels.blob.core.windows.net/songs/04_sweet_home',
                0.6 : 'https://newsfeels.blob.core.windows.net/songs/06_3005',
-               0.8 : 'happiysh song',
+               0.8 : 'https://newsfeels.blob.core.windows.net/songs/08_ren',
                1.0 : 'https://newsfeels.blob.core.windows.net/songs/10_happy'} 
   return songdisc[sentValue]
