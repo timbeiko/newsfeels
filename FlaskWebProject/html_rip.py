@@ -1,7 +1,4 @@
-# PYTHON 2
-
-# Programming to Rip Body Text of HTML
-# to be put into alchemy API for sentiment analysis
+# _input = raw_input("link or text: ")
 
 # imports
 from bs4 import BeautifulSoup
@@ -15,16 +12,18 @@ def to_text(website):
   texts = get_html(website)
   visible_text = filter(visible, texts)
   rip = "".join(visible_text)
+
   return "".join(rip)
    
 # *************************************************************************** #
 
 def get_html(website):
   """Rips the body text from the page"""
-  with urllib2.urlopen(website) as page:
-    soup = BeautifulSoup(page)
-    body = soup.body
-    texts = body.findAll(text=True)
+  page = urllib2.urlopen(website)
+  soup = BeautifulSoup(page)
+  body = soup.body
+  texts = body.findAll(text=True)
+
   return texts
 
 # *************************************************************************** #
@@ -32,12 +31,13 @@ def get_html(website):
 def visible(element):
   """For analysis of HTML tags & returns True for text visible to the user"""
   tags = ['style', 'script', '[document]', 'head', 'title']
+
   if element.parent.name in tags:
     return False
-  elif re.match('<!--.*-->', str(element)):
-    return False
+  # elif re.match('<!--.*-->', str(element)):
+  #   return False
   # elif re.match('/*.*/', str(element)):
-  #   return Falsef
+  #   return False
   else:
     return True
 
@@ -57,5 +57,6 @@ def link_or_nah(_input):
 # if link_or_nah(_input):
 #   text = to_text(_input)
 # else:
-#   # print "text is already good to go."
+#   print "text is already good to go."
+  # passt "text is already good to go."
 #   pass
