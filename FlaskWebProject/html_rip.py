@@ -12,7 +12,6 @@ def to_text(website):
   texts = get_html(website)
   visible_text = filter(visible, texts)
   rip = "".join(visible_text)
-
   return "".join(rip)
    
 # *************************************************************************** #
@@ -23,7 +22,6 @@ def get_html(website):
   soup = BeautifulSoup(page)
   body = soup.body
   texts = body.findAll(text=True)
-
   return texts
 
 # *************************************************************************** #
@@ -31,7 +29,6 @@ def get_html(website):
 def visible(element):
   """For analysis of HTML tags & returns True for text visible to the user"""
   tags = ['style', 'script', '[document]', 'head', 'title']
-
   if element.parent.name in tags:
     return False
   # elif re.match('<!--.*-->', str(element)):

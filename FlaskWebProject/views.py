@@ -31,5 +31,8 @@ def music():
     if link_or_nah(text):
       text = to_text(text) 
     else:
-      text = text          
-    return render_template('music.html', text=text)
+      text = text    
+
+    # x = str(request.args['text'])
+    sentiment = determineSubject(text)      
+    return render_template('music.html', text=text, sentiment = sentiment)
