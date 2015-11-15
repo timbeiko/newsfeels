@@ -13,7 +13,7 @@ from flask import abort, redirect, url_fo
 
 if __name__ == '__main__':
     app.debut = True
-    app.run()
+    app.run(debug=True)
 
 @app.route('/')
 def home():

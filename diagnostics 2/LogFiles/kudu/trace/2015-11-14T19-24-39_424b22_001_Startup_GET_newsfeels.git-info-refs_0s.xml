@@ -1,3 +1,0 @@
-<step title="Startup Request" date="2015-11-14T19:24:39.613" instance="424b22" url="/newsfeels.git/info/refs?service=git-receive-pack" method="GET" type="request" pid="3196,2,7" ScmType="LocalGit" >
-  <step title="Cleanup Xml Logs" date="2015-11-14T19:24:39.629" /><!-- duration: 0ms -->
-</step><!-- duration: 16ms -->

@@ -1,3 +1,0 @@
-<step title="Incoming Request" date="2015-11-14T21:45:04.024" instance="424b22" url="/dump" method="GET" type="request" pid="7420,2,10" Connection="Keep-Alive" Content-Length="0" Accept-Charset="UTF-8" Host="newsfeels.scm.azurewebsites.net" User-Agent="WindowsAzureXplatCLI/0.9.11" X-SITE-DEPLOYMENT-ID="newsfeels" >
-  <step title="Cleanup Xml Logs" date="2015-11-14T21:45:04.024" /><!-- duration: 16ms -->
-  <step title="ZipStreamContent.OnZip" date="2015-11-14T21:45:04.090" 
