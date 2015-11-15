@@ -11,9 +11,9 @@ from html_ripper import main
 from flask import request
 from flask import abort, redirect, url_fo
 
-# if __name__ == '__main__':
-#     app.debut = True
-#     app.run()
+if __name__ == '__main__':
+    app.debut = True
+    app.run()
 
 @app.route('/')
 def home():
