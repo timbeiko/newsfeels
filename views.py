@@ -20,25 +20,19 @@ if __name__ == '__main__':
 def home():
     if request.method == 'POST':
         text = request.form['weblink']
-        soundtype = request.form['soundtype']
-        # print("from soundtype: ")
-        return redirect(url_for('music', text=text, soundtype=soundtype))
+        return redirect(url_for('music', text=text))
     else:
         return render_template('index.html')
-
 
 @app.route('/music')
 def music():
     text = request.args['text']
-    soundtype = request.args['soundtype']
-    print("soundtype: " + request.args['soundtype'])
     # if text is a link call mains
     if link_or_nah(text):
       text = to_text(text) 
     else:
       text = text    
-
     sentiment = float(determineSubject(text))
     value = getSentValue(sentiment)
     songUrl = getSongUrlFromValue(sentiment)   
-    return render_template('music.html', text=text, sentiment = sentiment, songUrl=songUrl, value=value, soundtype=soundtype)
+    return render_template('music.html', text=text, sentiment = sentiment, songUrl=songUrl, value=value)
