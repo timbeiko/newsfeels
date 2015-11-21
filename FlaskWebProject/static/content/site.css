@@ -1,4 +1,17 @@
 ﻿/* styles for validation helpers */
+.article-area {
+  background-color:white;
+  margin: 25px;
+  padding: 15px;
+  padding-top:25px;
+  line-height: 1.5;
+  text-align:left;
+}
+.article-area h4{
+  text-align: left;
+  line-height: 1.5;
+}
+
 .field-validation-error {
     color: #b94a48;
 }
