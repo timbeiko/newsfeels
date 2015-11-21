@@ -19,9 +19,12 @@ if __name__ == '__main__':
 @app.route('/', methods=['POST', 'GET'])
 def home():
     if request.method == 'POST':
-        # Have to set params to redirect ot either /music or /beats depending on what was chosen
-        text = request.form['weblink']
-        return redirect(url_for('music', text=text))
+        if request.form['soundType'] == 'Song':
+            text = request.form['weblink']
+            return redirect(url_for('music', text=text))
+        else:
+            text = request.form['weblink']
+            return redirect(url_for('beats', text=text))
     else:
         return render_template('index.html')
 
