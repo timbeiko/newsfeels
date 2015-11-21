@@ -19,6 +19,7 @@ if __name__ == '__main__':
 @app.route('/', methods=['POST', 'GET'])
 def home():
     if request.method == 'POST':
+        # Have to set params to redirect ot either /music or /beats depending on what was chosen
         text = request.form['weblink']
         return redirect(url_for('music', text=text))
     else:
@@ -27,12 +28,16 @@ def home():
 @app.route('/music')
 def music():
     text = request.args['text']
-    # if text is a link call mains
     if link_or_nah(text):
       text = to_text(text) 
     else:
       text = text    
+
     sentiment = float(determineSubject(text))
     value = getSentValue(sentiment)
     songUrl = getSongUrlFromValue(sentiment)   
     return render_template('music.html', text=text, sentiment = sentiment, songUrl=songUrl, value=value)
+
+@app.route('/beats')
+def beats():
+    return render_template('beats.html')
