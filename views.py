@@ -43,4 +43,10 @@ def music():
 
 @app.route('/beats')
 def beats():
-    return render_template('beats.html')
+    text = request.args['text']
+    if link_or_nah(text):
+      text = to_text(text) 
+    else:
+      text = text    
+    sentiment = float(determineSubject(text))
+    return render_template('beats.html', soundtype="beat", sentiment = sentiment)
